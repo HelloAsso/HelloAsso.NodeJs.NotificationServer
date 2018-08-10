@@ -17,7 +17,7 @@ fastify.post('/', async (request, reply) => {
     const {body} = request;
 
     console.log(body);
-    reply.code(204);
+    reply.send(body);
 });
 
 // Démarrage du serveur.
